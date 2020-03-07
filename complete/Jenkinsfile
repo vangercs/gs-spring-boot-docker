@@ -5,13 +5,11 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-		./mvnw clean install
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing..'
-		mvn clean test
             }
         }
         stage('Deploy') {
